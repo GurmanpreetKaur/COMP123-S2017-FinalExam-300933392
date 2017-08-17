@@ -5,11 +5,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 /*
- * Name:
- * Date:
- * StudentID:
- * Description:
- * Version:
+ * Name:Gurmanpreet Kaur
+ * Date: 17 aug , 2017
+ * StudentID: 300933392
+ * Description: This is the main driver class for the progarm 
+ * Version 0.1 - modified to show the SplashForm first 
  */
 
 namespace COMP123_S2017_FinalExam_300933392
