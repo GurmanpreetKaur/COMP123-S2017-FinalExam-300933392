@@ -15,7 +15,7 @@ using System.Windows.Forms;
  * Date: 17 aug , 2017
  * StudentID: 300933392
  * Description: This is the PickHighestCardFrom Form 
- * Version: 
+ * Version 0.1 - Added the private intance variable and property and modified the reset method
  */
 
 namespace COMP123_S2017_FinalExam_300933392
@@ -29,12 +29,23 @@ namespace COMP123_S2017_FinalExam_300933392
         Deck _deck;
         Hand _hand;
         int _maximumPoints;
-        
+        private ScoreBoard _scoreBoard;
+
 
 
         // PUBLIC PROPERTIES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-        
 
+        public ScoreBoard ScoreBoard
+        {
+            get
+            {
+                return this._scoreBoard;
+            }
+            set
+            {
+                this._scoreBoard = value;
+            }
+        }
 
 
         public List<PictureBox> DealtCardPictureBoxList
@@ -205,7 +216,9 @@ namespace COMP123_S2017_FinalExam_300933392
             this._enableDealtCards();
             this._hideFinalScore();
             UserMessageTextBox.Text = "Click the Deal Button!";
-           
+            this.ScoreBoard.Score = 0;
+            this.ScoreBoard.Time = 30;
+
         }
 
         /// <summary>

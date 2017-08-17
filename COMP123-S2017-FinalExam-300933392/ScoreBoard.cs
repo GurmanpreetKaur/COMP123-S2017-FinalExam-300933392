@@ -11,7 +11,7 @@ using System.Windows.Forms;
  * Version 0.1 - Created the ScoreBoard class and added properties and methods to it */
 namespace COMP123_S2017_FinalExam_300933392
 {
-    class ScoreBoard
+   public class ScoreBoard
     {
         //private instance variables-----------------------
         private TextBox _finalScoreTextBox;
@@ -24,7 +24,12 @@ namespace COMP123_S2017_FinalExam_300933392
 
         private TextBox _timeTextBox;
 
+    
+
+
         //public properties
+        
+
 
         public TextBox FinalScoreTextBox
         {
