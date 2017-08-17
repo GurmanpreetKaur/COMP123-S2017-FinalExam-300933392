@@ -11,16 +11,16 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 /*
- * Name:
- * Date:
- * StudentID:
- * Description:
- * Version:
+ * Name:Gurmanpreet Kaur
+ * Date: 17 aug , 2017
+ * StudentID: 300933392
+ * Description: This is the PickHighestCardFrom Form 
+ * Version: 
  */
 
 namespace COMP123_S2017_FinalExam_300933392
 {
-    public partial class PickHighestCardForm : Form
+    public  partial class PickHighestCardForm : Form
     {
         // PRIVATE INSTANCE VARIABLES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         List<PictureBox> _dealtCardPictureBoxList;
@@ -29,8 +29,14 @@ namespace COMP123_S2017_FinalExam_300933392
         Deck _deck;
         Hand _hand;
         int _maximumPoints;
+        
+
 
         // PUBLIC PROPERTIES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        
+
+
+
         public List<PictureBox> DealtCardPictureBoxList
         {
             get
@@ -199,6 +205,7 @@ namespace COMP123_S2017_FinalExam_300933392
             this._enableDealtCards();
             this._hideFinalScore();
             UserMessageTextBox.Text = "Click the Deal Button!";
+           
         }
 
         /// <summary>
